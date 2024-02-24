@@ -1,0 +1,61 @@
+//Variable
+$primary :#DE2D16;
+$secondary : #364E79;
+// $navbar-item-hover-color : 
+$navbar-item-color : #fff;
+$navbar-item-hover-color : rgb(222, 45, 22);
+$navbar-item-img-max-height : 2rem;
+// $primary{
+
+// }
+.has-primary-font{
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    margin-top: 2rem;
+}
+.navbar-start {
+    text{
+        color: black;
+    }
+    .navbar-item {
+        transition: transform 0.3s ease; 
+    }
+
+    .navbar-item:hover {
+        transform: scale(1.2); 
+    }
+}
+.navbar-end{
+    .icon{
+        color: #fff;
+        &hover{
+            transition: color 0.3s ease-in-out;
+            color: green;
+        }
+    }
+    
+}
+
+.navbar-item{
+    font-family: "Poppins", sans-serif;
+}
+.container h1{
+    color: #fff;
+}
+.container h2{
+    color: aliceblue;
+}
+.hero{
+    background: url("./../img/piattos.jpg") center / cover;
+}
+// product haruulah heseg
+.container {
+    .card{
+        justify-content: center;
+        align-items: center;
+    }
+}
+//bulma.sass import
+@import "../node_modules/bulma/bulma.sass";
+ 
