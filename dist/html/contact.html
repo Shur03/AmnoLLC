@@ -73,6 +73,100 @@
         </div>
         
        </section>
+       <section class="section">
+        <div class="container">
+            <h2 class="title has-text-centered is-2">Холбоо барих</h2>
+            <div class="columns is-tablet">
+                <!--Address-->
+                <div class="column">
+                    <h4 class="title">Хаяг</h4>
+                    <address>
+                        <strong>AmnoLLC</strong><br>
+                        Ард Аюушийн өргөн чөлөө, 34-р гудамж,<br>
+                        Амно Холдинг ХХК<br>
+                        Улаанбаатар, Монгол улс
+                    </address>
+                    <ul>
+                        <li><a href="tel:(976)70122029"><i class="fa-solid fa-phone"> </i>(976)70122029</a></li>
+                        <li><a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKCBjtzdmnHRRBWPtgzzfJFRPmcTdpbqfKdTjsvHtBxbBHCtgmFfrjqXhSXGBvZQBTJlSgq"><i class="fa-solid fa-envelope"></i> info@amno.mn</a></li>
+                    </ul>
+                </div>
+                <!--Time-table-->
+                <div class="column">
+                    <h4 class="title">Цагийн хуваарь</h4><br>
+                    <p>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Voluptate perferendis optio <br>blanditiis unde, at sapiente.</p>
+                </div>
+            </div>
+            <!--Message & Maps-->
+            <div class="columns">
+                <!--sent message-->
+                <div class="column">
+                    <h6 class="title is-4">Мессеж илгээх</h6>
+                    <form >
+                        <div class="columns">
+                            <div class="column">
+                                <div class="field">
+                                    <label for="name" class="label">Нэр: </label>
+                                    <div class="control has-icons-left">
+                                        <input type="text" class="input" id="name" placeholder="Нэрээ бичнэ үү" required/>
+                                        <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="field">
+                                    <label for="name" class="label">Email: </label>
+                                    <div class="control has-icons-left">
+                                        <input type="text" class="input" id="email" placeholder="E-mail оруулна уу" required/>
+                                        <span class="icon is-small is-left"><i class="fas fa-envelope"></i></span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <div class="column">
+                                <div class="field">
+                                    <label for="name" class="label">Утасны дугаар: </label>
+                                    <div class="control has-icons-left">
+                                        <input type="text" class="input" id="phone" placeholder="Утасны дугаараа оруулна уу" required/>
+                                        <span class="icon is-small is-left"><i class="fas fa-phone"></i></span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column">
+                                <div class="field">
+                                    <label for="name" id="company" class="label">Байгууллага : </label>
+                                    <div class="control has-icons-left">
+                                        <input type="text" class="input" placeholder="Байгууллага оруулна уу"/>
+                                        <span class="icon is-small is-left"><i class="fas fa-home"></i></span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label for="textarea" class="label">Мессеж :</label>
+                            <div class="control">
+                                <textarea class="textarea" id="textarea"  rows="5" placeholder="Мессежээ энд бичнэ үү." required></textarea>
+                            </div>
+                        </div>
+                        <button class="button is-primary" type="submit">Илгээх</button>
+                        <button class="button" type="reset">Буцах</button>
+                    </form>
+                </div>
+                <!--Google maps-->
+                <div class="column">
+                    <h6 class="title is-4">Газрын зураг дээр харах</h6>
+                    <figure class="image is-4by3"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2673.7115408893615!2d106.8626542753031!3d47.922618666103304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d9692dcc94fd4ed%3A0xc1a75eb4999b18a7!2sWVF8%2B333%2C%20Ulaanbaatar%2016093!5e0!3m2!1sen!2smn!4v1708874967840!5m2!1sen!2smn" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></figure>
+                    
+                </div>
+            </div>
+        </div>
+       </section>
         <!-- Footer Section -->
    <footer class="footer">
     <div class="container">
@@ -119,5 +213,29 @@
         </p>
     </div>
    </footer>
+    <!-- Hanburger menu -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    
+    // Get all "navbar-burger" elements
+    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+    
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+    
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+    
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+    
+      });
+    });
+    
+    });
+       </script>
 </body>
 </html>

@@ -1,14 +1,13 @@
 //Variable
 $primary :#545479;
 $secondary : #364E79;
+$thirdy :#F83D0D ;
 // $navbar-item-hover-color : 
 $navbar-item-color : #fff;
-$navbar-item-hover-color : #E8F3F1;
+$navbar-item-hover-color : #F83D0D;
 $navbar-item-img-max-height : 2rem;
 $navbar-item-active-color : $primary;
-// $primary{
-
-// }
+$navbar-background-color : #009ED5;
 .has-primary-font{
     font-family: "Poppins", sans-serif;
 }
@@ -16,19 +15,24 @@ $navbar-item-active-color : $primary;
     background-color: #00C2A7;
     color: #fff; //text color
 }
+.has-primary {
+    background-color: #F83D0D ;
+    color: #F83D0D; /* Primary color for the button, you can change it */
+}
+
+// .has-primary-button:hover {
+//     background-color: #0056b3; /* Darker color on hover */
+// }
+
 .navbar{
     margin-top: 2rem;
+}
+.navbar-burger{
+
 }
 .navbar-start {
     text{
         color: black;
-    }
-    .navbar-item {
-        transition: transform 0.3s ease; 
-    }
-
-    .navbar-item:hover {
-        transform: scale(1.2); 
     }
 }
 .navbar-end{
@@ -65,22 +69,25 @@ $navbar-item-active-color : $primary;
     
     }
 }
-// .container {
-//     .column{
-//         display: block;
-//         transition: transform 0.3s ease;
-//     }
-
-//     .column :hover{
-//       transform: scale(1.2);
-//     }
-// }
+iframe{
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+}
 .footer a{
     color: $secondary;
     transition: color 0.3s ease-in-out;
 }
 .footer a :hover{
     color : $primary;
+}
+@media(max-width : 760px){
+    .navbar-item{
+        margin-left: 1rem;
+    }
 }
 //bulma.sass import
 @import "../node_modules/bulma/bulma.sass";

@@ -1,69 +1,81 @@
-/* line 12, sass/main.scss */
+/* line 11, sass/main.scss */
 .has-primary-font {
   font-family: "Poppins", sans-serif; }
 
-/* line 15, sass/main.scss */
+/* line 14, sass/main.scss */
 .has-primary-background {
   background-color: #00C2A7;
   color: #fff; }
 
-/* line 19, sass/main.scss */
+/* line 18, sass/main.scss */
+.has-primary {
+  background-color: #F83D0D;
+  color: #F83D0D;
+  /* Primary color for the button, you can change it */ }
+
+/* line 27, sass/main.scss */
 .navbar {
   margin-top: 2rem; }
 
-/* line 23, sass/main.scss */
+/* line 34, sass/main.scss */
 .navbar-start text {
   color: black; }
 
-/* line 26, sass/main.scss */
-.navbar-start .navbar-item {
-  transition: transform 0.3s ease; }
-
-/* line 30, sass/main.scss */
-.navbar-start .navbar-item:hover {
-  transform: scale(1.2); }
-
-/* line 35, sass/main.scss */
+/* line 39, sass/main.scss */
 .navbar-end .icon {
   color: #fff;
   transition: transform 0.3s ease-in-out; }
 
-/* line 39, sass/main.scss */
+/* line 43, sass/main.scss */
 .navbar-end .icon :hover {
   transform: scale(1.2); }
 
-/* line 45, sass/main.scss */
+/* line 49, sass/main.scss */
 .navbar-item {
   font-family: "Poppins", sans-serif; }
 
-/* line 48, sass/main.scss */
+/* line 52, sass/main.scss */
 .container h1 {
   color: #fff; }
 
-/* line 51, sass/main.scss */
+/* line 55, sass/main.scss */
 .container h2 {
   text-align: center;
   justify-content: center;
   align-items: center;
   color: #170000; }
 
-/* line 57, sass/main.scss */
+/* line 61, sass/main.scss */
 .hero {
   background: url("./../img/piattos.jpg") center/cover; }
 
-/* line 62, sass/main.scss */
+/* line 66, sass/main.scss */
 .container .card {
   justify-content: center;
   align-items: center; }
 
-/* line 78, sass/main.scss */
+/* line 72, sass/main.scss */
+iframe {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 85%; }
+
+/* line 80, sass/main.scss */
 .footer a {
   color: #364E79;
   transition: color 0.3s ease-in-out; }
 
-/* line 82, sass/main.scss */
+/* line 84, sass/main.scss */
 .footer a :hover {
   color: #545479; }
+
+@media (max-width: 760px) {
+  /* line 88, sass/main.scss */
+  .navbar-item {
+    margin-left: 1rem; } }
 
 /*! bulma.io v0.9.4 | MIT License | github.com/jgthms/bulma */
 /* Bulma Utilities */
@@ -4604,7 +4616,7 @@ button.dropdown-item {
 
 /* line 59, node_modules/bulma/sass/components/navbar.sass */
 .navbar {
-  background-color: white;
+  background-color: #009ED5;
   min-height: 3.25rem;
   position: relative;
   z-index: 30; }
@@ -5289,7 +5301,7 @@ a.navbar-item,
   .navbar-link:hover,
   .navbar-link.is-active {
     background-color: #fafafa;
-    color: #E8F3F1; }
+    color: #F83D0D; }
 
 /* line 186, node_modules/bulma/sass/components/navbar.sass */
 .navbar-item {
@@ -5369,7 +5381,7 @@ a.navbar-item,
     display: none; }
   /* line 250, node_modules/bulma/sass/components/navbar.sass */
   .navbar-menu {
-    background-color: white;
+    background-color: #009ED5;
     box-shadow: 0 8px 16px rgba(10, 10, 10, 0.1);
     padding: 0.5rem 0; }
     /* line 254, node_modules/bulma/sass/components/navbar.sass */
