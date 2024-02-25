@@ -56,6 +56,24 @@ $navbar-item-img-max-height : 2rem;
         align-items: center;
     }
 }
+.footer a{
+    color: $secondary;
+    transition: color 0.3s ease-in-out;
+}
+.footer a :hover{
+    color : $primary;
+}
+.footer ul li{
+    margin-top: 3rem;
+    color : orangered;
+    align-items: center;
+}
+.footer h6{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
 //bulma.sass import
 @import "../node_modules/bulma/bulma.sass";
  
